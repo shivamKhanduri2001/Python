@@ -1,0 +1,4 @@
+x=5
+y=9
+z="Shivam"
+print(x,y,z)
