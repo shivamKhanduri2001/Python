@@ -1,0 +1,13 @@
+n = 29
+f = 3.1428
+s = "Hello, Shivam!"
+li = [1, 2, 3]
+d = {'key': 'value'}
+bool = True
+
+print(type(n))   
+print(type(f)) 
+print(type(s))   
+print(type(li))     
+print(type(d))     
+print(type(bool))
