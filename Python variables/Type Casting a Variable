@@ -1,0 +1,14 @@
+#int(): Converts compatible values to an integer.
+#float(): Transforms values into floating-point numbers.
+#str(): Converts any data type into a string.
+
+x=10
+number=int(x)
+
+y=52.2
+decimal=float(y)
+
+z="age"
+word=str(z)
+
+print(x,y,z)
