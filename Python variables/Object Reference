@@ -1,0 +1,6 @@
+x=5
+y=x
+x="Shivam"
+y="Age"
+
+#now 5 is a garbage value
