@@ -1,0 +1,9 @@
+a="welcome to this world"
+print(a)
+
+#chechikng data types
+print(type(a))
+
+#accessing string with index
+print(a[1])
+print(a[3])
