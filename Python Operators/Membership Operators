@@ -1,0 +1,9 @@
+#in            True if value is found in the sequence
+#not in        True if value is not found in the sequence
+
+a=10
+b=20
+list=[10,30,50,70]
+
+print(a in list)
+print(b not in list)
