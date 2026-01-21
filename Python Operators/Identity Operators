@@ -1,0 +1,9 @@
+#is          True if the operands are identical 
+#is not      True if the operands are not identical 
+
+a=4
+b=2
+c=a
+
+print(a is c)
+print(a is not b)
