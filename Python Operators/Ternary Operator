@@ -1,0 +1,6 @@
+#single line replacing the multiline if-else, making the code compact
+#Syntax :  [on_true] if [expression] else [on_false] 
+
+a=10
+b=20
+print(a if a<=b else b)
