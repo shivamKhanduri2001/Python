@@ -1,0 +1,16 @@
+#(Task 4 – Lists)
+#Student List System
+#Requirements:
+#Create empty list called students
+#Ask user to enter 3 student names
+#Store them using .append()
+#Print them using a loop
+
+students = []
+for i in range (3):
+    name = input(f"Enter name of student {i+1}: ")
+    students.append(name)
+
+print("\nList of Students: ")
+for student in students:
+    print(student)
