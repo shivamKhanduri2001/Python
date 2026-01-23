@@ -1,0 +1,19 @@
+#Task 3: Use return instead of print 
+#Requirements: 
+#Function should return a string message 
+#Main program should print the result 
+#Keep your logic same
+
+def check_eligibility(name, age):
+    voting_age = 18
+    if age >= voting_age:
+        return f"You are elgible to vote {name}."
+    else:
+        years_to_vote = voting_age-age
+        return f"Sorry {name}, you are only {age} years old you will be eligible in {years_to_vote} year to vote"
+
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))
+
+result = check_eligibility(user_name, user_age)
+print(result)
