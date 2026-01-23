@@ -1,17 +1,18 @@
-#Task 2: Convert your program into a function
+#Task 3: Use return instead of print
 #Requirements:
-#Create a function called check_eligibility
-#It should take name and age as parameters
-#It should print eligibility result
-#Call the function from main program
-
-def check_eligiblity( name, age):
+#Function should return a string message
+#Main program should print the result
+#Keep your logic same
+def check_eligibility(name, age):
     voting_age = 18
     if age >= voting_age:
-        print(f"Hello, {name}! Your are eligible to vote.")
+        return f"You are elgible to vote {name}."
     else:
         years_to_vote = voting_age-age
-        print(f"Sorry, {name}. You are only {age} years old. You will be eligible in {years_to_vote}")
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-check_eligiblity(name, age)
+        return f"Sorry {name}, you are only {age} years old you will be eligible in {years_to_vote} year to vote"
+
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))
+
+result = check_eligibility(user_name, user_age)
+print(result)
