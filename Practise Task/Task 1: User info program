@@ -1,0 +1,13 @@
+#Task 1: User info program
+#Write a program that:
+#Asks name
+#Asks age
+#If age >= 18 → print “Eligible for job” name
+#Else → print “Not eligible” name
+
+name=input("Enter your name: ")
+age= int(input("Enter your age: "))
+if(age >= 18):
+    print("Eligible for job", name)
+else:
+    print("Not Eligible",name)
