@@ -1,0 +1,32 @@
+#Requirements:
+#Create empty list students
+#Loop 3 times
+#For each student:
+#Ask name
+#Ask age
+#Ask cgpa
+#Store each student as a dictionary inside list
+#Print all student records nicely
+
+students = []
+
+for i in range(3):
+    name = input(f"Enter name of student {i+1}: ")
+    age = int(input(f"Enter age of student {i+1}: "))
+    cgpa = float(input(f"Enter cgpa of student {i+1}: "))
+
+    student = {
+        "name": name,
+        "age": age,
+        "cgpa": cgpa
+    }
+
+    students.append(student)
+
+print("\nList of students:")
+
+for student in students:
+    print(f"Name: {student['name']}")
+    print(f"Age: {student['age']}")
+    print(f"CGPA: {student['cgpa']}")
+    print("------")
