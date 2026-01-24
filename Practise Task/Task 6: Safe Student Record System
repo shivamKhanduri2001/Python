@@ -10,26 +10,42 @@ list of dictionaries
 while loops
 try/except
 Prints all students nicely at end'''
-try:
-    students = []
-    for i in range (3):
-        name = input(f"Enter name {i+1}: ")
-        age = int(input(f"Enter age {i+1}: "))
-        cgpa = float(input(f"Enter CGPA {i+1}: "))
-        student = {"name" : name,
-                "age" : age,
-                "cgpa" : cgpa
-            }
-        students.append(student)
-        continue
-        break
-except:
-    print("Please enter a valid number")
+students=[]
 
-print("\nList of dictionery: ")
+for i in range (3):
+
+    name = input(f"Enter name {i+1}: ")
+
+    while True:
+        try:
+            age= int(input(f"Enter Age {i+1}: "))
+            if age < 0:
+                print("Age can't be negative")
+                continue
+            break
+        except:
+            print("Enter a Valid number for age")
+    
+    while True:
+        try:
+            cgpa = float(input(f"Enter CGPA {i+1}: "))
+            if cgpa <0 or cgpa > 10:
+                print("Cgpa msut be between 0 and 10")
+                continue
+            break
+        except:
+            print("Enter a valid number for CGPA")
+
+    student = {
+        "name" : name,
+        "age": age,
+        "cgpa": cgpa
+    }
+    students.append(student)
+
+print("\nList of students: ")
 
 for student in students:
-    print(f"Name: {student['name']}")
-    print(f"Age: {student['age']}")
-    print(f"CGPA: {student['cgpa']}")
-    print("-------")
+    print( f"Name: {student['name']}")
+    print( f"Age: {student['age']}")
+    print( f"CGPA: {student['cgpa']}")
