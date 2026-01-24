@@ -1,0 +1,35 @@
+students = []
+for i in range (3):
+    name = input(f"Enter name {i+1}: ")
+
+    while True:
+        try:
+            age = int(input(f"Enter age {i+1}: "))
+            if age < 0:
+                print("Age can't be neagative")
+                continue
+            break
+        except:
+            print("Enter a valid number for age")
+    
+    while True:
+        try:
+            cgpa = float(input(f"Enter CGPA {i+1}: "))
+            if cgpa < 0 or cgpa > 10:
+                print ("CGPA value must be between 0 to 10")
+                continue
+            break
+        except:
+            print("Enter a valid number for cgpa")
+    student = {
+        "name" : name,
+        "age" : age,
+        "cgpa" : cgpa
+        }
+    students.append(student)
+
+with open("students.txt", "w") as file:
+    for student in students:
+        line = f"{student['name']},{student['age']},{student['cgpa']}\n"
+        file.write(line)
+print("Students saved to file successfully.")
