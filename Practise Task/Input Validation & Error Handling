@@ -1,0 +1,10 @@
+while True:
+    try:
+        cgpa= float(input("Enter cgpa: "))
+        
+        if cgpa<0:
+            print(f"cgpa can't be negative.")
+            continue
+        break
+    except:
+        print("Enter a Valid cgpa")
