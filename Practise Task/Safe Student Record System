@@ -1,0 +1,35 @@
+'''Task: Safe Student Record System
+Build a program that:
+Stores 3 students
+For each student:
+name (string)
+age (integer ≥ 0) → validated
+cgpa (0 to 10) → validated
+Uses:
+list of dictionaries
+while loops
+try/except
+Prints all students nicely at end'''
+try:
+    students = []
+    for i in range (3):
+        name = input(f"Enter name {i+1}: ")
+        age = int(input(f"Enter age {i+1}: "))
+        cgpa = float(input(f"Enter CGPA {i+1}: "))
+        student = {"name" : name,
+                "age" : age,
+                "cgpa" : cgpa
+            }
+        students.append(student)
+        continue
+        break
+except:
+    print("Please enter a valid number")
+
+print("\nList of dictionery: ")
+
+for student in students:
+    print(f"Name: {student['name']}")
+    print(f"Age: {student['age']}")
+    print(f"CGPA: {student['cgpa']}")
+    print("-------")
