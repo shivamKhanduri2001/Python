@@ -1,0 +1,5 @@
+name = input("Enter your name: ")
+if name == "":
+    print("You did'nt typed your name")
+else:
+    print(f"Hello {name}")
