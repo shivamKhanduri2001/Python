@@ -1,0 +1,6 @@
+for_sale = False
+
+if for_sale:
+    print("this item is for sale")
+else:
+    print("this item is not for sale")
