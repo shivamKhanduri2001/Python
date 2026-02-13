@@ -1,0 +1,15 @@
+#python weight convertor
+
+weight = float(input("Enter the value of weight: "))
+unit = input("Kilogram or Pound? (k or P): ")
+
+if unit == "k":
+    weight = weight*2.205
+    unit = "Lbs"
+    print(f"Your weight is : {round(weight, 1)}{unit}")
+elif unit == "p":
+    weight = weight/2.205
+    unit = "kgs"
+    print(f"Your weight is :{round(weight,1)}{unit}")
+else:
+    print(f"{unit} is not valid")
